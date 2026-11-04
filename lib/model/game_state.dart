@@ -1,5 +1,5 @@
 // lib/model/game_state.dart
-// Aaron KALAJI 10670705 CSP2108 1/11/25
+// Aaron Mark Kalaji, CSP2108, 1/11/25
 
 enum GameState {
   loading,

@@ -1,5 +1,5 @@
 // lib/services/stats_service.dart
-// Aaron KALAJI 10670705 CSP2108 3/11/25
+// Aaron Mark Kalaji, CSP2108, 3/11/25
 
 import 'dart:convert';
 import 'package:shared_preferences/shared_preferences.dart';

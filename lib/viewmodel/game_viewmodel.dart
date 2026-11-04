@@ -1,5 +1,5 @@
 // lib/viewmodel/game_viewmodel.dart
-// Aaron KALAJI 10670705 CSP2108 2/11/25
+// Aaron Mark Kalaji, CSP2108, 2/11/25
 
 import 'dart:async';
 import 'dart:math';

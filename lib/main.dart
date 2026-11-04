@@ -4,7 +4,7 @@ import 'viewmodel/game_viewmodel.dart';
 import 'game_screen.dart';
 import 'services/stats_screen.dart'; // import the new stats screen
 import 'constants.dart'; // import constants
-// Aaron KALAJI 10670705 CSP2108 1/11/25
+// Aaron Mark Kalaji, CSP2108, 1/11/25
 
 void main() {
   runApp(

@@ -1,5 +1,5 @@
 // lib/stats_screen.dart
-// Aaron KALAJI 10670705 CSP2108 3/11/25
+// Aaron Mark Kalaji, CSP2108, 3/11/25
 
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';

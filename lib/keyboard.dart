@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'constants.dart';
-// Aaron KALAJI 10670705 CSP2108 1/11/25
+// Aaron Mark Kalaji, CSP2108, 1/11/25
 
 class Keyboard extends StatelessWidget {
   final Map<String, Color> keyboardColors;

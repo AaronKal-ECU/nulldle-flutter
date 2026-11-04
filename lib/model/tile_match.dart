@@ -1,5 +1,5 @@
 // lib/model/tile_match.dart
-// Aaron KALAJI 10670705 CSP2108 1/11/25
+// Aaron Mark Kalaji, CSP2108, 1/11/25
 
 import 'package:flutter/material.dart';
 import '../constants.dart';

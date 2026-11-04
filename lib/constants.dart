@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-// Aaron KALAJI 10670705 CSP2108 1/11/25
+// Aaron Mark Kalaji, CSP2108, 1/11/25
 
 // colours
 const Color kGreen = Color(0xFF6AAA64); // correct letter, correct spot
