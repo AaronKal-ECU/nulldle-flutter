@@ -1,5 +1,5 @@
 name: nulldle
-description: "wordle copy"
+description: "Nulldle, a Wordle-style word game built with Flutter."
 publish_to: 'none' 
 
 version: 1.0.0+1
