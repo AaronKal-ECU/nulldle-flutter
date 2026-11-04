@@ -1,16 +1,28 @@
-# nulldle
+# Nulldle
 
-A new Flutter project.
+A Wordle-style word game for mobile, built with Flutter. Guess the hidden five-letter word in six tries, with coloured tiles and an on-screen keyboard showing how close each guess was.
 
-## Getting Started
+## What I built
+- The full game loop: a random target word from a dictionary of over 11,000 five-letter words, guess validation, green/yellow/grey tile scoring, and a keyboard that remembers the best result for each letter.
+- A home screen, game screen and stats screen, with a timer running on every game.
+- Persistent stats (wins, losses, games played, incorrect guesses) and a top-10 fastest-wins leaderboard, saved on the device with `shared_preferences`.
+- An MVVM structure: game state and rules live in a `GameViewModel` shared through `provider`, separate from the UI widgets, plus widget tests for the home and game screens.
 
-This project is a starting point for a Flutter application.
+## Tools & tech
+Dart, Flutter, provider, shared_preferences, flutter_test.
 
-A few resources to get you started if this is your first Flutter project:
+## What I learnt
+- Separating UI from game logic with MVVM and `ChangeNotifier`.
+- Building responsive Flutter layouts from reusable widgets (grid, tiles, keyboard).
+- Loading bundled assets and saving data locally on the device.
+- Writing widget tests that check screens render and navigate correctly.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Run it
+With the Flutter SDK installed:
+```
+flutter pub get
+flutter run
+```
+Run the tests with `flutter test`.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Built for CSP2108 Introduction to Mobile Applications Development at Edith Cowan University, 2025.
