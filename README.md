@@ -2,6 +2,8 @@
 
 A Wordle-style word game for mobile, built with Flutter. Guess the hidden five-letter word in six tries, with coloured tiles and an on-screen keyboard showing how close each guess was.
 
+<img src="docs/screenshot.png" alt="Nulldle home screen, and a game in progress with three scored guesses" width="600">
+
 ## What I built
 - The full game loop: a random target word from a dictionary of over 11,000 five-letter words, guess validation, green/yellow/grey tile scoring, and a keyboard that remembers the best result for each letter.
 - A home screen, game screen and stats screen, with a timer running on every game.
