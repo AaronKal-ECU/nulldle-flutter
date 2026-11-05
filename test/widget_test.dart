@@ -1,12 +1,23 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:provider/provider.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'package:nulldle/main.dart';
 import 'package:nulldle/game_screen.dart';
+import 'package:nulldle/viewmodel/game_viewmodel.dart';
 
 void main() {
+  // GameScreen reads GameViewModel through Provider, as set up in main().
+  setUp(() => SharedPreferences.setMockInitialValues({}));
+
+  Widget withViewModel(Widget child) => ChangeNotifierProvider(
+        create: (_) => GameViewModel(),
+        child: child,
+      );
+
   testWidgets('HomeScreen UI elements remain consistent', (WidgetTester tester) async {
     // Pump the widget tree
-    await tester.pumpWidget(WordleApp());
+    await tester.pumpWidget(withViewModel(const WordleApp()));
 
     // Title
     expect(find.text('Nulldle'), findsOneWidget);
@@ -35,8 +46,10 @@ void main() {
     // Pump GameScreen
     await tester.binding.setSurfaceSize(const Size(1080, 1920));
     await tester.pumpWidget(
-      MaterialApp(
-        home: GameScreen(),
+      withViewModel(
+        const MaterialApp(
+          home: GameScreen(),
+        ),
       ),
     );
 
